@@ -181,7 +181,7 @@ body {
   justify-content: space-around;
   align-items: center;
   box-shadow: var(--shadow);
-  overflow-x: auto;
+  overflow-x: hidden; /* Matikan scroll horizontal agar navbar rapi */
 }
 
 .nav-link {
@@ -234,7 +234,6 @@ body {
   margin-right: auto;
 }
 
-/* PERBAIKAN: Jarak scroll pas untuk semua section agar tidak terlalu ke atas */
 section,
 .section,
 .couple-section,
@@ -498,7 +497,7 @@ section,
   color: var(--text-muted);
 }
 
-/* PERBAIKAN: Galeri Section dibuat presisi & tidak terlalu ke atas */
+/* Galeri Section */
 #galeri,
 .gallery-section {
   padding: 60px 0 !important;
@@ -596,7 +595,7 @@ section,
   opacity: 1;
 }
 
-/* Media Queries untuk HP */
+/* Media Queries untuk HP & Tablet */
 @media (max-width: 768px) {
   #galeri,
   .gallery-section {
@@ -631,5 +630,21 @@ section,
   .event-card {
     width: 100%;
     max-width: 100%;
+  }
+
+  /* PERBAIKAN: Penyesuaian ukuran Navbar khusus layar HP agar muat presisi */
+  .navbar-wrapper {
+    width: 95%;
+    bottom: 12px;
+  }
+
+  .navbar {
+    padding: 6px 4px;
+    justify-content: space-between;
+  }
+
+  .nav-link {
+    font-size: 0.68rem;
+    padding: 6px 8px;
   }
 }
