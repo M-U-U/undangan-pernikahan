@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-  // 1. OPEN UNDANGAN & PLAY MUSIC
   const coverOverlay = document.getElementById('coverOverlay');
   const btnOpen = document.getElementById('btnOpen');
   const bgMusic = document.getElementById('bgMusic');
@@ -26,7 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
     isPlaying = !isPlaying;
   });
 
-  // 2. COUNTDOWN TIMER (30 OKTOBER 2030)
   const targetDate = new Date("October 30, 2030 08:00:00").getTime();
 
   function updateCountdown() {
@@ -55,7 +53,6 @@ document.addEventListener('DOMContentLoaded', () => {
   setInterval(updateCountdown, 1000);
   updateCountdown();
 
-  // 3. NAVBAR HIGHLIGHT SAAT SCROLL
   const sections = document.querySelectorAll('section');
   const navLinks = document.querySelectorAll('.nav-link');
 

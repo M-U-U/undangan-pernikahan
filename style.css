@@ -1,11 +1,8 @@
-/* ==========================================================================
-   1. RESET & VARIABLE CSS
-   ========================================================================== */
 :root {
-  --primary: #b76e79;        /* Rose Gold */
+  --primary: #b76e79;        
   --primary-hover: #a25b66;
   --primary-dark: #8c4853;
-  --bg-color: #FAF8F5;       /* Warm White/Champagne */
+  --bg-color: #FAF8F5;      
   --bg-light: #fdf8f6;
   --text-main: #333333;
   --text-muted: #666666;
@@ -30,12 +27,9 @@ body {
   background-color: var(--bg-color);
   color: var(--text-main);
   line-height: 1.6;
-  padding-bottom: 70px; /* Space for floating navbar */
+  padding-bottom: 70px; 
 }
 
-/* ==========================================================================
-   2. COVER OVERLAY & MODAL
-   ========================================================================== */
 .cover-overlay {
   position: fixed;
   top: 0;
@@ -158,9 +152,6 @@ body {
   box-shadow: 0 6px 20px rgba(235, 47, 91, 0.5);
 }
 
-/* ==========================================================================
-   3. FLOATING NAVBAR & MUSIC
-   ========================================================================== */
 .navbar-wrapper {
   position: fixed;
   bottom: 20px;
@@ -181,7 +172,7 @@ body {
   justify-content: space-around;
   align-items: center;
   box-shadow: var(--shadow);
-  overflow-x: hidden; /* Matikan scroll horizontal agar navbar rapi */
+  overflow-x: hidden; 
 }
 
 .nav-link {
@@ -217,10 +208,6 @@ body {
   font-size: 1.1rem;
   box-shadow: var(--shadow);
 }
-
-/* ==========================================================================
-   4. LAYOUT & TYPOGRAPHY
-   ========================================================================== */
 .container {
   max-width: 1000px;
   margin: 0 auto;
@@ -286,7 +273,6 @@ section,
   color: var(--text-muted);
 }
 
-/* Grid/Flex Layout Simetris & Rata Tengah */
 .grid-2,
 .couple-grid,
 .event-grid {
@@ -319,10 +305,6 @@ section,
   box-sizing: border-box;
 }
 
-/* ==========================================================================
-   5. SECTION SPECIFIC STYLES
-   ========================================================================== */
-/* Hero Section */
 .hero-section {
   min-height: 100vh;
   display: flex;
@@ -376,7 +358,6 @@ section,
   letter-spacing: 1px;
 }
 
-/* Mempelai Card */
 .profile-img,
 .couple-img {
   width: 120px;
@@ -425,7 +406,6 @@ section,
   font-weight: 500;
 }
 
-/* Detail Acara & Maps */
 .event-title {
   font-family: var(--font-serif);
   font-size: 1.4rem;
@@ -456,7 +436,6 @@ section,
   background: var(--primary-dark);
 }
 
-/* Timeline Cerita */
 .timeline {
   border-left: 2px solid var(--border-color);
   padding-left: 24px;
@@ -497,7 +476,6 @@ section,
   color: var(--text-muted);
 }
 
-/* Galeri Section */
 #galeri,
 .gallery-section {
   padding: 60px 0 !important;
@@ -526,9 +504,6 @@ section,
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
-/* ==========================================================================
-   6. BUTTONS, FOOTER, TOAST & RESPONSIVE
-   ========================================================================== */
 .btn-primary {
   background: var(--primary);
   color: #ffffff;
@@ -595,7 +570,6 @@ section,
   opacity: 1;
 }
 
-/* Media Queries untuk HP & Tablet */
 @media (max-width: 768px) {
   #galeri,
   .gallery-section {
@@ -632,7 +606,6 @@ section,
     max-width: 100%;
   }
 
-  /* PERBAIKAN: Penyesuaian ukuran Navbar khusus layar HP agar muat presisi */
   .navbar-wrapper {
     width: 95%;
     bottom: 12px;
